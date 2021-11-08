@@ -1,0 +1,15 @@
+- {name: 'Events', link: '$HOME/events.php', escape: false}
+
+- {name: 'My e-Itinerary', link: '$HOME/about/e-Itinerary.php', escape: false}
+
+- {name: 'Programmes', link: '$HOME/about/programmes.php', escape: false}
+
+- {name: 'Why Lingnan', link: '$HOME/about/why-lingnan.php', escape: false}
+
+- {name: 'Lingnan Stories', link: '$HOME/lingnan-stories.php', escape: false}
+
+- {name: 'Map and Transportation', link: '$HOME/map-transportation.php', escape: false}
+
+- {name: 'Event Snapshots', link: '$HOME/about/snapshots.php', escape: false}
+
+- {name: 'Undergraduate Admissions', link: '$HOME/about/undergraduate-admissions.php', escape: false}

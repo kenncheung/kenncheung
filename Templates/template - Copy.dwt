@@ -1,0 +1,112 @@
+<!doctype html>
+<?php
+  // we are resolving the site path automatically here, or you can define it explicitly
+  //define('__SITE_PATH', (strpos(dirname(__FILE__), $_SERVER['DOCUMENT_ROOT']) == 0)? substr(dirname(__FILE__), strlen($_SERVER['DOCUMENT_ROOT'])) : dirname(__FILE__));
+  define('__SITE_PATH', '/infoday-new');  // without trailing slash!
+
+  require_once($_SERVER['DOCUMENT_ROOT'].DIRECTORY_SEPARATOR.__SITE_PATH.DIRECTORY_SEPARATOR.'/includes/common.php');
+
+  $page->startCapture('page_charset');
+?>
+<meta charset="UTF-8">
+<meta name="keywords" content="Lingnan University, arts, Liberal arts">
+<meta name="description" content="Lingnan University">
+<meta name="viewport" content="viewport-fit=cover">
+<?
+  $page->endCapture();
+
+  // include css/js to be put in page head
+  $page->startCapture('page_head');
+?>
+<!-- TemplateInfo codeOutsideHTMLIsLocked="true" -->
+<!-- Localized Stylesheet -->
+<link href="../assets/css/infoday.css?v=1.0" type="text/css" rel="stylesheet" />
+<link href="../assets/css/horizontal-menu.css?v=1.0" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="../assets/js/jscroller2-1.61.js"></script>
+<script type="text/javascript" src="../assets/js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="../assets/js/jquery.easing.js"></script>
+<script type="text/javascript" src="../assets/js/jquery.mousewheel.js"></script>
+<link href="../assets/css/flexslider/flexslider.css" type="text/css" rel="stylesheet" />
+<link href="../assets/css/tables.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+ByRei_jScroller2.config.refreshtime = 60; // Refreshrate 100m
+$(function() {
+	$('#photoslide').flexslider({
+		animation: "fade",
+		slideshow: true,
+		controlNav: true
+	});
+});
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126822703-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-126822703-1');
+</script>
+
+<!-- TemplateBeginEditable name="head" -->
+
+
+
+<?php $page->setTitle('Information Day for Undergraduate Admissions 2019 - Lingnan University'); ?>
+<!-- TemplateEndEditable -->
+<?php
+  $lnlib->initLib("dropdownmenu");
+  $page->endCapture();  // end capture page head
+
+  // start template
+  $page->startTemplate();
+?>
+
+
+<!-- Horizontal menu -->
+<div id="menu">
+<? include($page->localizeFile($page->getConfig('site_file_path')."/includes/menubar.php")); ?>
+  </div>
+<div class="page-main-wrapper">
+<!--  <div class="page-main-breadcrumb">
+    <?php
+    $page->writeBreadcrumb($breadcrumbs[$page->getLanguage()]);
+    ?>
+  </div>-->
+
+  <div class="row">
+  <div class="col-sm-12">
+    <div class="page-main-content ckec">
+<!-- TemplateBeginEditable name="EditRegion2" -->
+      <h1>&nbsp;</h1>
+      <div class="flex-container">
+        <div class="flexslider backdrop" id="photoslide">
+          <ul class="slides">
+            <li> <img src="../slideshow/slide-01.jpg" alt="FACULTY OF ARTS" />
+              <p class="flex-caption"><span class="style6">23 March 2018</span><br />
+                Research Output Excellence Award presented to Department of Sociology and Social Policy</p>
+            </li>
+            <li> <img src="../slideshow/slide-02.jpg" alt="FACULTY OF ARTS" />
+              <p class="flex-caption"> <span class="style6">9 December 2017</span><br />
+                <em>The 19th Hong Kong Sociological Association Annual Meeting </em></p>
+            </li>
+            <li> <img src="../slideshow/slide-03.jpg" alt="FACULTY OF ARTS" />
+              <p class="flex-caption"><span class="style6">8 and 9 December 2017</span><br />
+                <em>Conference on &quot; 'Doing' Comparative Social Policy Analysis in Changing Global Context&quot;</em></p>
+            </li>
+            <li><img src="../slideshow/slide-04.jpg" alt="FACULTY OF ARTS" />
+              <p class="flex-caption"> <span class="style6">13 March 2018</span> <br />
+                <em>Distinguished  Lecture on &quot;Unteaching Intolerance?&quot; by Professor James L Gibson</em></p>
+            </li>
+          </ul>
+       </div>
+	 </div>
+   </div>
+  </div>
+<!-- TemplateEndEditable -->
+</div>
+</div>
+
+<?php
+  $page->endTemplate();
+?>

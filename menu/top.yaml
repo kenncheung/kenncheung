@@ -1,0 +1,17 @@
+- {name: 'Home', link: '$HOME', escape: false}
+
+- {name: 'Events', link: '$HOME', escape: false}
+
+- {name: 'Itinerary', link: '$HOME/events.php', escape: false}
+
+- {name: 'Programmes', link: '$HOME/programmes.php', escape: false}
+
+- {name: 'Why Lingnan', link: 'https://www.ln.edu.hk/admissions/why-lingnan/', escape: false}
+
+- {name: 'Lingnan Stories', link: '$HOME/lingnan-stories.php', escape: false}
+
+- {name: 'Map and Transportation', link: '$HOME/map.php', escape: false}
+
+- {name: 'Event Snapshots', link: '$HOME/event-snapshots.php', escape: false}
+
+- {name: 'Undergraduate Admissions', link: 'https://www.ln.edu.hk/admissions/ug/', escape: false}
